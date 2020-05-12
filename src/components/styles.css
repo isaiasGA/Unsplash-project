@@ -1,0 +1,20 @@
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0 10px;
+  grid-auto-rows: 10px;
+}
+/*
+  - 'grid-template-column': A property used to create a certain number of columns
+  - 'auto-fill': It will automatically decide how many columns of images to put on  the screen
+  - 'minmax(250px)': Each column is going to be 250px WIDE
+  - 'minmax(1fr)': maximun space of 1fr('fr' for every column we create, we want them to be equally sized) 
+  */
+/*grid-gap: ti allows to have a bottom margin in ezch pic*/
+/* 'grid-auto-rows':(dotted-reactangle) Will determine the size of each rectangle container or cell*/
+
+.image-list img {
+  width: 250px;
+  grid-row-end: span 2;
+}
+/*'grid-row-end': will designate 2 clees/rows(span 2) per image*/
